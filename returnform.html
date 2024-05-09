@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js" defer></script>
+    <script src="modal.js" defer></script>
+    <title>LM | Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <button class="secondary-btn" id="toggle">=</button>
+                <img src="./assets/images/AIIHE_Logo_Landscape_Medium.svg" width="150" alt="school logo">
+
+            </div>
+            <button class="primary-btn"><a href="/issueform.html" style="text-decoration: none; color: #fafafa;">Issue
+                    item</a></button>
+
+        </div>
+    </header>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-container">
+            <h5>Dashboard</h5>
+            <ul>
+                <li><img src="./assets/icons/icons8-home-32.png" height="25" width="25"
+                        alt="home icon">&nbsp;&nbsp;<small><a href="/index.html">Home</a></small></li>
+                <li><img src="./assets/icons/icons8-form-50.png" height="25" width="25"
+                        alt="form icon">&nbsp;&nbsp;<small><a href="/issueform.html">Issue Item</a></small></li>
+                <li><img src="./assets/icons/icons8-books-24 (1).png" alt="book icon">&nbsp;&nbsp;<small><a
+                            href="/itemrecords.html">Issue records</a></small></li>
+                <li><img src="./assets/icons/icons8-return-32.png" height="25" width="25"
+                        alt="book icon">&nbsp;&nbsp;<small><a href="/returnform.html">Return item</a></small></li>
+                <li><img src="./assets/icons/icons8-books-24 (1).png" alt="book icon">&nbsp;&nbsp;<small><a
+                            href="/returnrecords.html">Return records</a></small></li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p><img src="./assets/icons/icons8-tick.gif" alt="tick gif">&nbsp;&nbsp;&nbsp;&nbsp;Item returned
+                    succesfully.</p>
+            </div>
+        </div>
+
+        <form action="#" method="post" id="itemIssueForm">
+            <h4>Return Item Form</h4>
+
+            <label for="name">Student name:</label>
+            <input type="text" id="name" name="name" pattern="^[A-Za-z\s]+$" required>
+
+            <label for="name">Staff name:</label>
+            <input type="text" id="name" name="name" pattern="^[A-Za-z\s]+$" required>
+
+            <label for="contact">Item id:</label>
+            <input type="text" id="contact" name="contact" pattern="^[A-Za-z0-9]+$" required>
+
+            <label for="contact">Returned date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <input type="submit" value="Submit" id="myBtn" class="primary-btn">
+
+        </form>
+        <p class="signin">Go back to home page.<a href="/index.html">Click here.</a> </p>
+    </main>
+</body>
+
+</html>

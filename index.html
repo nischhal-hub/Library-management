@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js" defer></script>
+    <title>Library Managment</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <button class="secondary-btn" id="toggle">=</button>
+                <img src="./assets/images/AIIHE_Logo_Landscape_Medium.svg" width="150" alt="school logo">
+            </div>
+            <button class="primary-btn"><a href="/issueform.html" style="text-decoration: none; color: #fafafa;">Issue item</a></button>
+        </div>
+    </header>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-container">
+            <h5>Dashboard</h5>
+            <ul>
+                <li><img src="./assets/icons/icons8-home-32.png" height="25" width="25" alt="home icon">&nbsp;&nbsp;<small><a href="/index.html">Home</a></small></li>
+                <li><img src="./assets/icons/icons8-form-50.png" height="25" width="25" alt="form icon">&nbsp;&nbsp;<small><a href="/issueform.html">Issue Item</a></small></li>
+                <li><img src="./assets/icons/icons8-books-24 (1).png" alt="book icon">&nbsp;&nbsp;<small><a href="/itemrecords.html">Issue records</a></small></li>
+                <li><img src="./assets/icons/icons8-return-32.png" height="25" width="25" alt="book icon">&nbsp;&nbsp;<small><a href="/returnform.html">Return item</a></small></li>
+                <li><img src="./assets/icons/icons8-books-24 (1).png" alt="book icon">&nbsp;&nbsp;<small><a href="/returnrecords.html">Return records</a></small></li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <article class="books">
+            <h5>Available Books</h5>
+            <section class="books-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/images/books/71wvDBsPRSL._AC_UF1000,1000_QL80_DpWeblab_.jpg" alt="book">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Programming Python</p>
+                        <p class="text-body">Author: <span>Mark Lutz</span></p>
+                        <p class="text-body">Edition: <span>4th edition</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title"></span>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/images/books/978-3-030-50750-3.jpg" alt="c book">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">C for beginners</p>
+                        <p class="text-body">Author: <span>Avelina J. Gonjalez</span></p>
+                        <p class="text-body">Edition: <span>2nd edition</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title"></span>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/images/books/images.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">HTML & CSS</p>
+                        <p class="text-body">Author: <span>Thomas A Powell</span></p>
+                        <p class="text-body">Edition: <span>5th edition</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title"></span>
+
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article class="journals">
+            <h5>Available Journals</h5>
+            <section class="journals-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/images/journals/51kjBg22c8L.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">The future of academic journal.</p>
+                        <p class="text-body">Author: <span>Bill Cope and Angus Phillips</span></p>
+                        <p class="text-body">Edition: <span>2nd edition</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/images/journals/file1482352913.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Academic journal of economic studies.</p>
+                        <p class="text-body">Author: <span>Dimitrie Cantemir</span></p>
+                        <p class="text-body">Edition: <span>2nd edition</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title"></span>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/images/journals/images.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Academic journal of indisciplinary studies</p>
+                        <p class="text-body">Author: <span>Richtmann</span></p>
+                        <p class="text-body">Edition: <span>2nd edition</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title"></span>
+
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article class="cd">
+            <h5>Available CD's</h5>
+            <section class="cd-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/images/CD/-A1017-04-89-89-A101704898905-A101704898905-Lrg.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">IELTS</p>
+                        <p class="text-body">Author: <span>Pearson</span></p>
+                        <p class="text-body">Edition: <span>-</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title"></span>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/images/CD/CD-ROM__29077.webp" alt="">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Proceedings</p>
+                        <p class="text-body">Author: <span>Curran</span></p>
+                        <p class="text-body">Edition: <span>-</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title"></span>
+
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

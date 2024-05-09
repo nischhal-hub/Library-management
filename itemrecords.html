@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js" defer></script>
+    <title>Library Managment</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <button class="secondary-btn" id="toggle">=</button>
+                <img src="./assets/images/AIIHE_Logo_Landscape_Medium.svg" width="150" alt="school logo">
+
+            </div>
+            <button class="primary-btn"><a href="/issueform.html" style="text-decoration: none; color: #fafafa;">Issue item</a></button>
+
+        </div>
+    </header>
+    <!-- <button class="primary-btn">Primary</button>
+        <button class="secondary-btn">Primary</button> -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-container">
+            <h5>Dashboard</h5>
+            <ul>
+                <li><img src="./assets/icons/icons8-home-32.png" height="25" width="25" alt="home icon">&nbsp;&nbsp;<small><a href="/index.html">Home</a></small></li>
+                <li><img src="./assets/icons/icons8-form-50.png" height="25" width="25" alt="form icon">&nbsp;&nbsp;<small><a href="/issueform.html">Issue Item</a></small></li>
+                <li><img src="./assets/icons/icons8-books-24 (1).png" alt="book icon">&nbsp;&nbsp;<small><a href="/itemrecords.html">Issue records</a></small></li>
+                <li><img src="./assets/icons/icons8-return-32.png" height="25" width="25" alt="book icon">&nbsp;&nbsp;<small><a href="/returnform.html">Return item</a></small></li>
+                <li><img src="./assets/icons/icons8-books-24 (1).png" alt="book icon">&nbsp;&nbsp;<small><a href="/returnrecords.html">Return records</a></small></li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <main>
+        <article class="table-container">
+            <h4>Issue Records</h4>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Staff Name</th>
+                        <th>Item type</th>
+                        <th>Item id</th>
+                        <th>Quantity</th>
+                        <th>Issue Date</th>
+                        <th>Renew Date</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

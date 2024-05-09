@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js" defer></script>
+    <script src="modal.js" defer></script>
+    <title>LM | Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <button class="secondary-btn" id="toggle">=</button>
+                <img src="./assets/images/AIIHE_Logo_Landscape_Medium.svg" width="150" alt="school logo">
+
+            </div>
+            <button class="primary-btn"><a href="/issueform.html" style="text-decoration: none; color: #fafafa;">Issue item</a></button>
+        </div>
+    </header>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-container">
+            <h5>Dashboard</h5>
+            <ul>
+                <li><img src="./assets/icons/icons8-home-32.png" height="25" width="25" alt="home icon">&nbsp;&nbsp;<small><a href="/index.html">Home</a></small></li>
+                <li><img src="./assets/icons/icons8-form-50.png" height="25" width="25" alt="form icon">&nbsp;&nbsp;<small><a href="/issueform.html">Issue Item</a></small></li>
+                <li><img src="./assets/icons/icons8-books-24 (1).png" alt="book icon">&nbsp;&nbsp;<small><a href="/itemrecords.html">Issue records</a></small></li>
+                <li><img src="./assets/icons/icons8-return-32.png" height="25" width="25" alt="book icon">&nbsp;&nbsp;<small><a href="/returnform.html">Return item</a></small></li>
+                <li><img src="./assets/icons/icons8-books-24 (1).png" alt="book icon">&nbsp;&nbsp;<small><a href="/returnrecords.html">Return records</a></small></li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p><img src="./assets/icons/icons8-tick.gif" alt="tick gif">&nbsp;&nbsp;&nbsp;&nbsp;Issue submitted
+                    succesfully.</p>
+                </div>
+            </div>
+            
+            <form action="#" method="post" id="itemIssueForm">
+                <h4>Item Issue Form</h4>
+                <div>
+                    <label for="studentName">Student name:</label>
+                    <input type="text" id="studentName" name="studentName" pattern="^[A-Za-z\s]+$" required>
+                </div>
+                <div>
+                    <label for="contact">Email Information:</label>
+                    <input type="email" id="contact" name="contact" pattern="^\S+@\S+\.\S+$" required>
+                </div>
+                <div>
+                    <label for="staffName">Staff name:</label>
+                    <input type="text" id="staffName" name="staffName" pattern="^[A-Za-z\s]+$" required>
+                </div>
+                <div>
+                    <label for="itemType">Select Item Type:</label>
+                    <select id="itemType" name="itemType" required>
+                        <option value="" disabled selected>Select item type</option>
+                        <option value="Book">Book</option>
+                        <option value="Journal">Journal</option>
+                        <option value="CD">CD</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="itemId" pattern="^[A-Za-z0-9]+$">Item id:</label>
+                    <input type="text" id="itemId" name="itemId" required>
+                </div>
+                <div>
+                    <label for="date">Issue date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="quantity" pattern="^\d+$">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </div>
+                <div>
+                    <label for="specialRequests">Special Requests:</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" id="myBtn" class="primary-btn" />
+                </div>
+            </form>
+            
+            <p>Go back to home page.<a href="/index.html">Click here.</a> </p>
+    </main>
+</body>
+
+</html>
